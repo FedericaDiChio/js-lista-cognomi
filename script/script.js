@@ -15,9 +15,12 @@ var displayPosition= document.getElementById("position")
 var lastname = ["Bianchi", "Neri", "Rossi", "Verdi", "Gialli"];
 
 // Collect Data 
-// Dati utente
 var userLastname;
 
 do {
     userLastname = prompt("Inserisci il tuo cognome");
 } while (!userLastname);
+
+// Add and sort 
+lastname.push(userLastname);
+lastname.sort();
