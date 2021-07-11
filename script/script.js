@@ -24,3 +24,21 @@ do {
 // Add and sort 
 lastname.push(userLastname);
 lastname.sort();
+
+
+// Print position 
+var userPosition = lastname.indexOf(userLastname) + 1; 
+displayPosition.innerHTML = "Il cognome si trova in posizione" + " " + userPosition;
+
+// Print in page 
+var listItems = "";
+for (var i = 0; i < lastname.length; i++) {
+    listItems += "<li>" + lastname[i] + "</li>";
+
+}
+
+listElement.innerHTML = listItems;
+
+
+
+//* TO DO - Lettere maiuscole. 
